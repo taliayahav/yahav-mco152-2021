@@ -5,11 +5,11 @@ import org.junit.Test;
 
 import java.io.FileNotFoundException;
 
-public class dictionaryFileTest {
+public class DictionaryFileTest {
 
     @Test
     public void getWord() throws FileNotFoundException {
-        dictionaryFile readWord = new dictionaryFile("/Users/taliayahav/Downloads/dictionary.txt");
+        DictionaryFile readWord = new DictionaryFile("/Users/taliayahav/Downloads/dictionary.txt");
         boolean x = readWord.getWord("AA");
         Assert.assertTrue(x);
         boolean y = readWord.getWord("Talia");

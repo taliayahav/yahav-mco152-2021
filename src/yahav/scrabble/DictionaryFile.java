@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 
-public class dictionaryFile {
-    ArrayList<String> allFirstWords = new ArrayList<>();
+public class DictionaryFile {
+    private final ArrayList<String> allFirstWords = new ArrayList<>();
 
     /**
      * opens given file and reads through it, only searching the first word of every line.
@@ -13,7 +13,7 @@ public class dictionaryFile {
      * @throws FileNotFoundException
      */
 
-    public dictionaryFile(String file) throws FileNotFoundException {
+    public DictionaryFile(String file) throws FileNotFoundException {
         File newFile = new File(file);
         Scanner inputFile = new Scanner(newFile);
         while (inputFile.hasNext()) {
