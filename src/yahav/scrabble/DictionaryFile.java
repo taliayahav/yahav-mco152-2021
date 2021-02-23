@@ -1,7 +1,8 @@
 package yahav.scrabble;
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.FileReader;
+import java.util.*;
 import java.io.File;
 
 public class DictionaryFile {
@@ -22,6 +23,8 @@ public class DictionaryFile {
             allFirstWords.add(firstWord);
         }
         inputFile.close();
+        Collections.sort(allFirstWords);
+        System.out.println(allFirstWords);
     }
 
     /**
@@ -30,13 +33,7 @@ public class DictionaryFile {
      * @return true if word exists
      */
     public boolean getWord(String word) {
-        boolean retWord = false;
-        for (String newWord : allFirstWords) {
-            if (newWord.equalsIgnoreCase(word)) {
-                retWord = true;
-                break;
-            }
-        }
-        return retWord;
+        String[] dictArray = allFirstWords.toArray(new String[0]);
+        return Arrays.binarySearch(dictArray, word.toUpperCase()) > 0;
     }
 }
