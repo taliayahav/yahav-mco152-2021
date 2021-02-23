@@ -11,14 +11,12 @@ import javafx.stage.Stage;
         public void start(Stage stage) throws Exception {
             Parent root = FXMLLoader.load(getClass().getResource("RocketApplication.fxml"));
 
-            Scene scene = new Scene(root, 300, 275);
+            Scene scene = new Scene(root, 300, 800);
 
             stage.setTitle("Rocket Calculator");
             stage.setScene(scene);
             stage.show();
         }
-
-
         public static void main(String[] args) {
             launch(args);
         }

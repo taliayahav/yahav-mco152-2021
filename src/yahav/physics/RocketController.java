@@ -20,6 +20,8 @@ public class RocketController {
     TextField xField;
     @FXML
     TextField yField;
+    @FXML
+    RocketCanvas rocketCanvas;
 
     @FXML public void calculateRocket(ActionEvent actionEvent) {
         double velocity = Double.parseDouble(velocityField.getText());
@@ -33,6 +35,8 @@ public class RocketController {
         xField.setText(String.valueOf(rocket.getX(seconds)));
         rocket.getY(seconds);
         yField.setText(String.valueOf(rocket.getY(seconds)));
+
+        rocketCanvas.draw(rocket);
 
     }
 
