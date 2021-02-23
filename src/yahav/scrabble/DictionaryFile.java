@@ -24,7 +24,6 @@ public class DictionaryFile {
         }
         inputFile.close();
         Collections.sort(allFirstWords);
-        System.out.println(allFirstWords);
     }
 
     /**
