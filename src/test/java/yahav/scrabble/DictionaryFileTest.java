@@ -10,7 +10,7 @@ public class DictionaryFileTest {
     @Test
     public void getWord() throws FileNotFoundException {
         DictionaryFile readWord = new DictionaryFile("dictionary.txt");
-        boolean x = readWord.getWord("AA");
+        boolean x = readWord.getWord("boat");
         Assert.assertTrue(x);
         boolean y = readWord.getWord("Talia");
         Assert.assertFalse(false);
