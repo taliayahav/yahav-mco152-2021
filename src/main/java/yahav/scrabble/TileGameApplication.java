@@ -6,14 +6,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class DictionaryApplication extends Application {
+public class TileGameApplication extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/dictionaryApplication.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/TileGame.fxml"));
 
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(root, 460, 275);
 
-        stage.setTitle("Dictionary");
+        stage.setTitle("TileGame");
         stage.setScene(scene);
         stage.show();
     }

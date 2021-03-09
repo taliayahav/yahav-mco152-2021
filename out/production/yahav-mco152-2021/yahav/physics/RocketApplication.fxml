@@ -9,10 +9,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.text.Text?>
+<?import yahav.physics.RocketCanvas?>
 <GridPane fx:controller="yahav.physics.RocketController"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <padding>
-        <Insets top="25" right="2" bottom="10" left="2"/>
+        <Insets top="25" right="2" bottom="40" left="2"/>
     </padding>
 
 
@@ -43,6 +44,12 @@
 
     <TextField fx:id="yField" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
 
-
+    <RocketCanvas fx:id="rocketCanvas"
+                  width = "200"
+                  height = "100"
+                  GridPane.columnIndex="0"
+                  GridPane.rowIndex="8"
+                  GridPane.columnSpan="5"
+                    GridPane.rowSpan="10"/>
 
 </GridPane>

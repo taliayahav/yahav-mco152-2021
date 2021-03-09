@@ -15,10 +15,10 @@ public class DictionaryController {
     TextField ifFoundWordField;
 
     public void dictionarySearch(ActionEvent actionEvent) throws FileNotFoundException {
-        DictionaryFile dictionaryFile = new DictionaryFile("/Users/taliayahav/Downloads/dictionary.txt");
+        DictionaryFile dictionaryFile = new DictionaryFile("src/main/resources/dictionary.txt");
         String str = wordSearchField.getText();
-        dictionaryFile.getWord(str);
-        if(dictionaryFile.getWord(str)){
+        dictionaryFile.contains(str);
+        if(dictionaryFile.contains(str)){
             ifFoundWordField.setText("exists");
         }
         else{

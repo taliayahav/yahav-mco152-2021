@@ -5,7 +5,7 @@ public class Main {
         Rocket rocket = new Rocket(71, 35);
         System.out.println(rocket.getX(3));
         System.out.println(rocket.getY(3));
-        System.out.println(rocket.TimeToLand());
+        System.out.println(rocket.getFlightTime());
     }
 
 }

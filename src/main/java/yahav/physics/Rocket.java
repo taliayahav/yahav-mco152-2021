@@ -26,7 +26,7 @@ public class Rocket {
         double y = yVelocity * time - 0.5 * GRAVITY * time *time;
         return y;
     }
-    public double TimeToLand(){
+    public double getFlightTime(){
         double yVelocity = Math.sin(Math.toRadians(angle)) * velocity;
         double time = yVelocity/(0.5*GRAVITY);
         return time;

@@ -2,7 +2,6 @@ package yahav.physics;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
 
 /*
 Draws the rocket to the canvas
@@ -24,7 +23,7 @@ public class RocketCanvas extends Canvas {
         context.moveTo(rocket.getX(3),rocket.getY(3));
 
 
-        for(double time =0; time<rocket.TimeToLand(); time+=0.5){
+        for(double time = 0; time<rocket.getFlightTime(); time+=0.5){
             double x = rocket.getX(time);
             double y = rocket.getY(time);
             context.fillOval(x, -y, 10, 10);
