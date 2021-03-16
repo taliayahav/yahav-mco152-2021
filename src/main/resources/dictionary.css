@@ -1,0 +1,7 @@
+Label {
+    -fx-border: 2;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-padding: 8 14 8 14;
+    -fx-background-color: white;
+}

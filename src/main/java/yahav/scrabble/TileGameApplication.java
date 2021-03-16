@@ -11,7 +11,7 @@ public class TileGameApplication extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/TileGame.fxml"));
 
-        Scene scene = new Scene(root, 460, 275);
+        Scene scene = new Scene(root, 520, 275);
 
         stage.setTitle("TileGame");
         stage.setScene(scene);

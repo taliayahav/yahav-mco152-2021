@@ -9,67 +9,71 @@
 <?import javafx.geometry.Insets?>
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
-          fx:controller="yahav.scrabble.DictionaryController"
+          fx:controller="yahav.scrabble.ScrabbleController"
+          stylesheets="@dictionary.css"
           prefHeight="400.0" prefWidth="600.0" hgap="10" vgap ="4">
     <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
-    <Label fx:id = "box0"
-           style="-fx-border: 2; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel0" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-    <Label fx:id = "box1"
-           style="-fx-border: 2; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel1" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="2" GridPane.rowIndex="0"/>
-    <Label fx:id = "box2"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel2" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="4" GridPane.rowIndex="0"/>
-    <Label fx:id = "box3"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel3" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="6" GridPane.rowIndex="0"/>
-    <Label fx:id = "box4"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel4" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="8" GridPane.rowIndex="0"/>
-    <Label fx:id = "box5"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel5" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="10" GridPane.rowIndex="0"/>
-    <Label fx:id = "box6"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "answerLabel6" onMouseClicked="#onAnswerClicked"
            GridPane.columnIndex="12" GridPane.rowIndex="0"/>
-    <Label fx:id = "box7"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
-           GridPane.columnIndex="14" GridPane.rowIndex="0"/>
-    <Button text="Submit"
+
+    <Button fx:id="submitButton" onAction= "#onSubmit" text="Submit"
             GridPane.columnIndex="4" GridPane.rowIndex="4"
             style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 8 8 8"
             minHeight= "20" minWidth="55" GridPane.columnSpan="4"/>
-    <Button text="Clear"
+    <Button fx:id="clearButton" onAction="#onClear" text="Clear"
             GridPane.columnIndex="8" GridPane.rowIndex="4"
             style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 8 8 8"
             minHeight= "20" minWidth="55" GridPane.columnSpan="4"/>
-    <Label text="# Points"
+    <Label fx:id="pointsCheck" text="# Points"
             GridPane.columnIndex="12" GridPane.rowIndex="4"
            style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 8 8 8"
            minHeight= "40" minWidth="55" GridPane.columnSpan="4"/>
-    <Label fx:id = "box8"
-           style="-fx-border: 2; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+
+    <Label fx:id = "letterLabel0" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="0" GridPane.rowIndex="6"/>
-    <Label fx:id = "box9"
-           style="-fx-border: 2; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "letterLabel1" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="2" GridPane.rowIndex="6"/>
-    <Label fx:id = "box10"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "letterLabel2" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="4" GridPane.rowIndex="6"/>
-    <Label fx:id = "box11"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "letterLabel3" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="6" GridPane.rowIndex="6"/>
-    <Label fx:id = "box12"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "letterLabel4" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="8" GridPane.rowIndex="6"/>
-    <Label fx:id = "box13"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "letterLabel5" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="10" GridPane.rowIndex="6"/>
-    <Label fx:id = "box14"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
+    <Label fx:id = "letterLabel6" onMouseClicked="#onLetterClicked"
            GridPane.columnIndex="12" GridPane.rowIndex="6"/>
-    <Label fx:id = "box15"
-           style="-fx-border: 1; -fx-border-color:black; -fx-border-style: solid; -fx-padding: 8 14 8 14; -fx-background-color: white"
-           GridPane.columnIndex="14" GridPane.rowIndex="6"/>
+
+    <fx:define>
+        <ArrayList fx:id="answerLabels" >
+            <fx:reference source="answerLabel0"/>
+            <fx:reference source="answerLabel1"/>
+            <fx:reference source="answerLabel2"/>
+            <fx:reference source="answerLabel3"/>
+            <fx:reference source="answerLabel4"/>
+            <fx:reference source="answerLabel5"/>
+            <fx:reference source="answerLabel6"/>
+        </ArrayList>
+        <ArrayList fx:id="letterLabels" >
+            <fx:reference source="letterLabel0"/>
+            <fx:reference source="letterLabel1"/>
+            <fx:reference source="letterLabel2"/>
+            <fx:reference source="letterLabel3"/>
+            <fx:reference source="letterLabel4"/>
+            <fx:reference source="letterLabel5"/>
+            <fx:reference source="letterLabel6"/>
+        </ArrayList>
+    </fx:define>
 </GridPane>
