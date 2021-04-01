@@ -10,7 +10,7 @@ public class DictionaryFileTest {
     @Test
     public void contains_true() throws FileNotFoundException {
         // given
-        DictionaryFile dictionary = new DictionaryFile("dictionary.txt");
+        DictionaryFile dictionary = new DictionaryFile("src/main/resources/dictionary.txt");
 
         // when
 
@@ -20,7 +20,7 @@ public class DictionaryFileTest {
     @Test
     public void contains_false() throws FileNotFoundException {
         // given
-        DictionaryFile dictionary = new DictionaryFile("dictionary.txt");
+        DictionaryFile dictionary = new DictionaryFile("src/main/resources/dictionary.txt");
 
         // when
 
@@ -31,7 +31,7 @@ public class DictionaryFileTest {
     @Test
     public void size() throws FileNotFoundException {
         // given
-        DictionaryFile dictionary = new DictionaryFile("dictionary.txt");
+        DictionaryFile dictionary = new DictionaryFile("src/main/resources/dictionary.txt");
 
         // when
 
@@ -42,7 +42,7 @@ public class DictionaryFileTest {
     @Test
     public void getDefinition() throws FileNotFoundException {
         // given
-        DictionaryFile dictionary = new DictionaryFile("dictionary.txt");
+        DictionaryFile dictionary = new DictionaryFile("src/main/resources/dictionary.txt");
 
         // when
 
