@@ -10,13 +10,13 @@
 
 
     <servlet>
-        <display-name>PathServlet</display-name>
-        <servlet-name>PathServlet</servlet-name>
-        <servlet-class>yahav.scrabble.webapp.PathServlet</servlet-class>
+        <display-name>DictionaryServlet</display-name>
+        <servlet-name>DictionaryServlet</servlet-name>
+        <servlet-class>yahav.scrabble.webapp.DictionaryServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>PathServlet</servlet-name>
+        <servlet-name>DictionaryServlet</servlet-name>
         <url-pattern>/path</url-pattern>
     </servlet-mapping>
 
