@@ -8,11 +8,8 @@ public class ScrabbleControllerTest {
     @Test
     public void initialize(){
         //given
-        ScrabbleController controller = new ScrabbleController();
-        controller.letterLabels = new ArrayList<>();
 
         //when
-        controller.initialize();
 
         //then
 

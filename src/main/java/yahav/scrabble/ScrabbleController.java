@@ -23,7 +23,10 @@ public class ScrabbleController {
 
     private int count =0;
 
-    public ScrabbleController() {
+    public ScrabbleController(LetterBag letterBag,
+                              DictionaryFile dictionary) {
+        this.letterBag = letterBag;
+        this.dictionary = dictionary;
         try {
             dictionary = new DictionaryFile("src/main/resources/dictionary.txt");
         }
