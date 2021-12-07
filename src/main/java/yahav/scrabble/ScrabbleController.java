@@ -5,7 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 public class ScrabbleController {
@@ -22,15 +24,16 @@ public class ScrabbleController {
     private DictionaryFile dictionary;
 
     private int count =0;
-
     public ScrabbleController(LetterBag letterBag,
                               DictionaryFile dictionary) {
         this.letterBag = letterBag;
         this.dictionary = dictionary;
         try {
-            dictionary = new DictionaryFile("src/main/resources/dictionary.txt");
+            dictionary = new DictionaryFile();
         }
         catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

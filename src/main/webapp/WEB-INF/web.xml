@@ -12,7 +12,7 @@
     <servlet>
         <display-name>DictionaryServlet</display-name>
         <servlet-name>DictionaryServlet</servlet-name>
-        <servlet-class>yahav.scrabble.webapp.DictionaryServlet</servlet-class>
+        <servlet-class>yahav.scrabble.DictionaryServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
